@@ -1,0 +1,113 @@
+@import "@/assets/scss/consts";
+
+.TableData{
+    border: solid 1px $gray-300;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: .3fr .5fr 1fr;
+    min-height: 80vh;
+
+    article{
+        width: 100% !important;
+        
+        height: 100%;
+        min-height: 80vh;
+
+        .sectionTableHeader{
+            width: 100%;
+            
+            max-height: 80px;
+            min-height: 80px;
+            border-bottom: solid 1px $gray-300;
+
+            section{
+                width: 100%;
+                max-height: 80px;
+                min-height: 80px;
+                padding: 25px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    pointer-events: none;
+                }
+            }
+            
+        }
+
+        .detailsTableHeader{
+            
+            section{
+                padding: 25px;
+            }
+        }
+
+        .listTableData{
+            list-style: none;
+            width: 100%;
+        }
+
+        li{
+            width: 100%;
+        }
+        .desc-item{
+            display: block;
+            color: $gray !important;
+            // padding: 0 25px;
+            margin-top: -2px;
+        }
+        .itemTableData{
+            width: 100%;            
+            p{
+                display: block;
+                padding: 25px 25px 25px 25px;    
+                cursor: pointer;
+                &:hover{
+                    background: $bs-light-info-rgba;
+                }
+            }
+            
+        }
+        
+        .itemTableData-active{
+            background: $bs-light-info-rgba;
+        }
+
+        &:nth-child(1){
+            width: 20%;
+            height: 100%;
+        }
+
+        &:nth-child(2){
+            width: 30%;
+            height: 100%;
+            border-left: solid 1px $gray-300;
+            border-right: solid 1px $gray-300;
+        }
+
+        &:nth-child(3){
+            height: 100%;
+            width: 50%;
+        }
+    }
+
+    li > .message-span{
+        padding: 25px;
+        color: $gray;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .message-span{
+        color: $gray;
+        display: block;
+        width: 100%;
+        padding: .3px;
+        text-align: center;       
+    }
+    
+    .checkGroup{
+        padding: 25px;
+    }
+}

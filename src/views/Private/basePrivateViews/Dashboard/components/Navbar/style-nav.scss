@@ -1,0 +1,103 @@
+@import "@/assets/scss/consts";
+
+.navbar{
+    color: $bs-gray-800 !important;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 0 2px  $bs-body-color-rgb;
+    display: flex;
+    align-items: center;
+    
+    h3{
+        position: absolute;
+        left: 107%;
+        pointer-events: none;
+    }
+    
+    .credits{
+        position: absolute;
+        right: 20px;
+    }
+
+    .logo{
+        min-width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0px 10px 10px;
+        position: relative;
+        .brand{
+            display: flex;
+            gap: 10px;
+            h1{
+                font-size: 22px;
+                letter-spacing: .3px;
+                font-weight: bold;
+                pointer-events: none;
+                span{
+                    
+                    font-weight: normal;
+                }
+            }
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+    
+
+    .isCloseNav{
+        justify-content: flex-start;
+        gap: 25px;
+        h1{
+            display: none;
+        }
+        h3{
+            left: 120px;
+        }
+        .brand{
+            transform: translateX(15px);
+        }
+    }
+    
+    
+}
+
+@media (max-width:1000px){
+    .navbar{
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+        
+        .isCloseNav{
+            .brand{
+                transform: translateX(0);
+            }
+        }
+        .logo{
+            
+            width: 100%;
+        }
+
+        .isOpenNav{
+            
+            justify-content: flex-start;
+            gap: 25px;
+            h1{
+                display: none;
+            }
+            h3{
+                left: 120px;
+            }
+
+        }
+    }
+    .brand{
+        h1{
+            display: none;
+        }
+
+    }
+}

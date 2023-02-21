@@ -1,0 +1,34 @@
+@import "@/assets/scss/consts";
+
+.container-users, .searcher{
+    width: 100%;
+    background:$white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon-input{
+    color: $gray;
+}
+
+.card-user{
+    width: 31.3% !important;
+
+    img{
+        width: 30%;
+    }
+
+    .user-stack{
+        width: 70%;
+        .card-user-body{
+            width: 100% !important;
+        }
+    }
+}

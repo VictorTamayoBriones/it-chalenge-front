@@ -1,0 +1,19 @@
+@import "@/assets/scss/consts";
+
+.profile-card{
+    width: 100%;
+    text-align: center;
+    color: $bs-gray-700;
+    img{
+        width: 50%;
+        margin: 10px auto;
+        border-radius: 50%;
+        border:solid 1px $bs-gray-300;
+    }
+    p{
+        margin: 5px;
+    }
+    div:has(button){
+        margin: auto;
+    }
+}

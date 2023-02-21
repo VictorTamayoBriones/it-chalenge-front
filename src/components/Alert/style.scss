@@ -1,0 +1,20 @@
+.mainAlertContainer{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s linear all;
+    z-index: 2000;
+}
+
+.hidden{
+    opacity: 0;
+    left: -100%;
+    transition: .3s linear all;
+}
+
+.visible{
+    opacity: 1;
+    left: 0;
+    transition: .3s linear all;
+}

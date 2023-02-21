@@ -1,0 +1,113 @@
+@import "@/assets/scss/consts";
+
+.aside-nav{
+    height: auto;
+    min-height: calc(100vh - 60px);
+    background: $bs-dark;
+    color: $white;
+    transition: .3s linear all;
+}
+
+.title-section{
+    margin: 40px 30px 15px 0px;
+    font-size: 18px;
+}
+
+.activeClassName{
+    color: $white !important;
+}
+
+.asideBody{
+    width: 260px;
+    padding: 0px 30px 30px 30px;
+    transition: .3s linear all;
+    a{
+        color: $bs-gray-600;
+        font-weight: 400;
+        letter-spacing: .3px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+
+        &:hover{
+            color: $white ;
+        }
+    }
+}
+
+.menuIsOpen{
+    width: 260px;
+    transition: .3s linear all;
+}
+
+.menuIsClose{
+    width: 80px;
+    transition: .3s linear all;
+    .asideBody{
+        width: auto;
+        padding: 10px 0;
+        a{
+            margin: 0;
+            gap: 0;
+            p{
+                display: none !important;
+            }
+            svg{
+                margin: 10px auto;
+            }
+        }
+    }
+    .title-section{
+        display: none;
+    }
+}
+
+@media(max-width:1000px){
+    .aside-nav{
+        width: 100%; 
+        max-height: 60px !important;
+        min-height: 60px !important;
+        display: flex;
+        padding: 0 20px;
+        background: $dark;
+        .header-aside{
+            width: max-content;
+            margin-right: 20px;
+        }
+        .asideBody{
+            display: flex;
+            gap: 20px;
+            height: max-content;
+        }
+    
+    }
+
+    .menuIsClose{
+        height: 0px !important;
+        max-height: 0px !important;
+        min-height: 0px !important;
+    }
+
+    .menuIsOpen{
+        width: 100%;
+        transition: .3s linear all;
+        .asideBody{
+            width: auto;
+            padding: 10px 0;
+            a{
+                margin: 0;
+                gap: 0;
+                p{
+                    display: none !important;
+                }
+                svg{
+                    margin: 10px auto;
+                }
+            }
+        }
+        .title-section{
+            display: none;
+        }
+    }
+}

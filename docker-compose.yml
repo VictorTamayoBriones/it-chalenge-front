@@ -1,0 +1,22 @@
+version: "3"
+services:
+  palmer_web:
+    container_name: palmer_web
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: palmer_web
+    ports: 
+      - "444:443"
+    environment:
+      TZ: "America/Mexico_City"
+    restart: always
+    volumes:
+      - palmer_web_nginx_logs:/var/log/nginx
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+
+volumes:
+  palmer_web_nginx_logs: {}

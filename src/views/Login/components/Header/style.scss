@@ -1,0 +1,13 @@
+.logo{
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+
+@keyframes rotating {
+    
+    100%{
+        transform: rotate(365deg);
+    }
+    
+}
