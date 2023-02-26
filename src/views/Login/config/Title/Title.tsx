@@ -1,5 +1,5 @@
 import { ITitle } from "../../models";
 
 export const FORM_TITLE: ITitle = {
-    text: "Palmer"
+    text: "Egresados"
 }

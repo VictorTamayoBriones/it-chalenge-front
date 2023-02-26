@@ -29,11 +29,11 @@ function AsideBody() {
         {
             modulesToShow.map((module)=>{
                 const CurrentIcon = Object.entries(Icons)?.filter(entri => entri?.includes(module))[0] && Object.entries(Icons)?.filter(entri => entri?.includes(module))[0][1]
-                const currentRoute = Object.entries(PRIVATE_ROUTES)?.filter(route=> route[0] === module.toUpperCase())[0][1]
-                
+                const currentRoute = Object.entries(PRIVATE_ROUTES)?.filter(route=> route[0] === module.toUpperCase())[0]
+                // console.log(currentRoute)
                 return(
                     
-                    <NavLink key={`module of ${module}`} to={currentRoute ? currentRoute : PRIVATE_ROUTES.DEFAULT} className={({ isActive }) => isActive ? 'activeClassName' : 'testNavLink'} > { CurrentIcon ? <CurrentIcon/> : <Icons.default/>} <p>{ toCapitalizefirstLetter(module === 'searches' ? 'search' : module)}</p> </NavLink>
+                    <NavLink key={`module of ${module}`} to={currentRoute ? currentRoute[1]: PRIVATE_ROUTES.DEFAULT} className={({ isActive }) => isActive ? 'activeClassName' : 'testNavLink'} > { CurrentIcon ? <CurrentIcon/> : <Icons.default/>} <p>{ toCapitalizefirstLetter(module === 'searches' ? 'search' : module)}</p> </NavLink>
                 )
             })
         }

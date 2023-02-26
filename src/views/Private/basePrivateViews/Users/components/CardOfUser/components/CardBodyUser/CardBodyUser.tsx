@@ -15,7 +15,6 @@ function CardBodyUser({userData}:Props) {
         <Text color={userData.is_active ? 'green' : 'red'} fontSize="md" >{userData.is_active ? 'active' : 'unactive'}</Text>
       </Stack>
       <p>{userData.email}</p>
-      <p>{userData.credits} credits</p>
     </CardBody>
   )
 }

@@ -1,5 +1,5 @@
 import { Container, Heading } from "@chakra-ui/react"
-import SpukyLogo from '../../../../assets/images/logo.svg'
+import logo_utt from '../../../../assets/images/Logo_utt.png'
 import { FORM_TITLE } from "../../config"
 import './style.scss'
 
@@ -11,7 +11,7 @@ function Header() {
         { FORM_TITLE.text }
       </Heading>
 
-      <img src={SpukyLogo} className="logo"/>
+      <img src={logo_utt} className="logo"/>
       
     </Container>
   )

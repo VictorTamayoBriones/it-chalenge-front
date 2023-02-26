@@ -21,8 +21,7 @@ export const useLogin = ()=>{
                     refresh_token: res?.data.refresh_token,
                     user_email: res?.data.user_email,
                     role_name: res?.data.role_name,
-                    permissions: res?.data.permissions,
-                    searches: res?.data.credits
+                    permissions: res?.data.permissions
                 }
                 
                 dispatch(updateDataSession(resAuthData))

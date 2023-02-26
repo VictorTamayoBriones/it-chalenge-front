@@ -1,4 +1,5 @@
 import { HEADER_TOKEN, usePostService } from '@/services';
+import { ConfigApi } from '../../../../../ConfigAPI';
 export const useAssingActions = () =>{
 
     const postService = usePostService()
@@ -11,7 +12,7 @@ export const useAssingActions = () =>{
             description: description
         }
 
-        await postService('/permissions/assing/actions', data, HEADER_TOKEN())
+        await postService(ConfigApi.permissions.allPermissions, data, HEADER_TOKEN())
     }
 
     return assingAction

@@ -19,8 +19,6 @@ function Navbar() {
     dispatch(toogleAsideMenu(!menuIsOpen))
   }
 
-  const searchesInBar = useSelector((store:AppStore)=>store.searchesInBar)
-
   return (
     <nav className="navbar">
       
@@ -35,8 +33,7 @@ function Navbar() {
 
         <h3>{toCapitalizefirstLetter(moduleName ? (moduleName === 'searches' ? 'search' :  moduleName) : '')}</h3>
       </div>
-      
-      <p className="credits" >{ searchesInBar < 0 ? 0 : searchesInBar } Credits </p>
+    
     </nav>
   )
 }
