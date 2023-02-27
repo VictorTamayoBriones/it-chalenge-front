@@ -1,0 +1,17 @@
+@import "@/assets/scss/consts";
+
+.menuItem{
+    background: teal !important;
+}
+
+.unActiveLinkAdministration{
+    color: $bs-gray-700 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.activeLinkAdministration{
+    color: $blue !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
