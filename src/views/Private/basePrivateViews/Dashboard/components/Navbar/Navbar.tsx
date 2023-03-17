@@ -25,7 +25,7 @@ function Navbar() {
       <div className={ `logo ${menuIsOpen ? 'isOpenNav' : 'isCloseNav'}` }>
       
         <div className={`brand ${menuIsOpen ? 'isOpenNav' : 'isCloseNav'}`}>  
-          <h1>Palmer</h1>
+          <h1>UTT</h1>
           <img src={Logo} alt="spuky" />
         </div>
         
