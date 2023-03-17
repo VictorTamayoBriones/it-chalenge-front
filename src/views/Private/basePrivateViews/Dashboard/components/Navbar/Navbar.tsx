@@ -1,6 +1,6 @@
 import "./style-nav.scss"
 
-import Logo from '@/assets/images/logo.svg'
+import Logo from '@/assets/images/Logo_utt.png'
 import { useDispatch, useSelector } from "react-redux"
 import { AppStore } from "@/redux/store"
 import { toogleAsideMenu } from "@/redux/baseStates/AsideMenu/AsideMenuSlice"
